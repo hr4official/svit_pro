@@ -13,6 +13,14 @@ def help1(request):
 
 def product1(request):
     return render(request, "products.html",{})
+
+def login(request):
+    return render(request, "login.html",{})
+
+def signup(request):
+    return render(request, "signup.html",{})
+
+    
 """
 def index_view(request):
     return HttpResponse("hello") """
