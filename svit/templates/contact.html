@@ -1,3 +1,5 @@
+{%load static from staticfiles %}
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -15,17 +17,18 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
-<link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /><!-- animation -->
-<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->    
+<link href="{% static 'static/css//bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'static/css//style.css' %}" rel="stylesheet" type="text/css" media="all" /> 
+<link href="{% static 'static/css//animate.min.css' %}" rel="stylesheet" type="text/css" media="all" /><!-- animation -->
+<link href="{% static 'static/css//menu.css' %}" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->    
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{% static 'static/css//font-awesome.css' %}" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
-<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script><!-- fixed nav js -->
+<link href="{% static 'static/css//font-awesome.css' %}" rel="stylesheet"> 
+<script src="{% static 'static/js/jquery-2.2.3.min.js' %}"></script> 
+<script src="{% static 'static/js/jquery-scrolltofixed-min.js' %}" type="text/javascript"></script><!-- fixed nav js -->
 <script>
     $(document).ready(function() {
 
@@ -53,8 +56,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'> 
 <!-- web-fonts -->  
 <!-- start-smooth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript" src="{% static 'static/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'static/js/easing.js' %}"></script>	
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -131,7 +134,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 		<div class="header-two"><!-- header-two -->
 			<div class="container">
 				<div class="header-logo">
-					<h1><a href="index.html"><span>S</span>mart <i>Bazaar</i></a></h1>
+					<h1><a href="index.html"><span>P</span>roduct <i>Pub</i></a></h1>
 					<h6>Your stores. Your place.</h6> 
 				</div>	
 				<div class="header-search">
@@ -938,7 +941,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="move-text">
 					<div class="marquee"><a href="offers.html"> New collections are available here...... <span>Get extra 10% off on everything | no extra taxes </span> <span> Try shipping pass free for 15 days with unlimited</span></a></div>
-					<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+					<script type="text/javascript" src="{% static 'static/js/jquery.marquee.min.js' %}"></script>
 					<script>
 					  $('.marquee').marquee({ pauseOnHover: true });
 					  //@ sourceURL=pen.js
@@ -954,19 +957,19 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<h3 class="w3ls-title w3ls-title1">Contact Us</h3>  
 			<div class="map-info">
 				<div class="col-md-6 map-grids">
-					<h4>Our Smart bazaar Store1</h4>
+					<h4>Product Pub Office1</h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"></iframe>
 				</div>
 				<div class="col-md-6 map-grids">
-					<h4>Our Smart bazaar Store2</h4>
+					<h4>Product Pub Office2</h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23778.253788067046!2d-87.77626504212625!3d41.84376259112007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e33967c81db8f%3A0xbc5872c77c003120!2sCicero%2C+IL!5e0!3m2!1sen!2sin!4v1470650895897"></iframe>
 				</div>   
 				<div class="col-md-6 map-grids">
-					<h4>Our Smart bazaar Store3</h4>
+					<h4>Product Pub Office3</h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4851.135123262741!2d105.86847248902144!3d58.25136049196456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cf6e6f5eed7e5eb%3A0xfec064728556bbad!2sTokma%2C+Irkutsk+Oblast%2C+Russia%2C+666639!5e0!3m2!1sen!2sin!4v1470650971228"></iframe>
 				</div>   
 				<div class="col-md-6 map-grids">
-					<h4>Our Smart bazaar Store4</h4>
+					<h4>Product Pub Office4</h4>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555" allowfullscreen=""></iframe>
 				</div> 
 				<div class="clearfix"> </div>
@@ -1091,14 +1094,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<div class="footer-info w3-agileits-info">
 				<div class="col-md-4 address-left agileinfo">
 					<div class="footer-logo header-logo">
-						<h2><a href="index.html"><span>S</span>mart <i>Bazaar</i></a></h2>
+						<h2><a href="index.html"><span>P</span>roduct <i>Pub</i></a></h2>
 						<h6>Your stores. Your place.</h6>
 					</div>
 					<ul>
-						<li><i class="fa fa-map-marker"></i> 123 San Sebastian, New York City USA.</li>
-						<li><i class="fa fa-mobile"></i> 333 222 3333 </li>
-						<li><i class="fa fa-phone"></i> +222 11 4444 </li>
-						<li><i class="fa fa-envelope-o"></i> <a href="mailto:example@mail.com"> mail@example.com</a></li>
+						<li><i class="fa fa-map-marker"></i> SVIT, Vasad.</li>
+						<li><i class="fa fa-mobile"></i> 1800 222 3333 </li>
+						<li><i class="fa fa-phone"></i> 1800 105 2244 </li>
+						<li><i class="fa fa-envelope-o"></i> <a href="mailto:example@mail.com"> info@productpub.com</a></li>
 					</ul> 
 				</div>
 				<div class="col-md-8 address-right">
@@ -1140,11 +1143,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	<!-- //footer -->		
 	<div class="copy-right"> 
 		<div class="container">
-			<p>© 2016 Smart bazaar . All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+			<p>©Product Pub . All rights reserved | Design by <a href="http://productpub.com"> ProductPub.</a></p>
 		</div>
 	</div> 
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<script src="{% static 'static/js/minicart.js' %}"></script>
 	<script>
         w3ls.render();
 
@@ -1163,12 +1166,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     </script>  
 	<!-- //cart-js -->
 	<!-- menu js aim -->
-	<script src="js/jquery.menu-aim.js"> </script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="{% static 'static/js/jquery.menu-aim.js'%}"> </script>
+	<script src="{% static 'static/js/main.js' %}"></script> <!-- Resource jQuery -->
 	<!-- //menu js aim --> 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+    <script src="{% static 'static/css/js/bootstrap.js' %}"></script>
 </body>
 </html>
