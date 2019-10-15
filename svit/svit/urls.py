@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from appone.views import homepage,contact,help1
+from appone.views import homepage,contact,help1,product1
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -23,5 +23,6 @@ urlpatterns = [
     path('index.html',include('appone.urls')),
     path('help.html',include('appone.urls')),
     path('contact.html',include('appone.urls')),
+    path('products.html',include('appone.urls')),
     path('admin/', admin.site.urls),
 ]

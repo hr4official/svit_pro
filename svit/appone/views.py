@@ -10,6 +10,9 @@ def contact(request):
 
 def help1(request):
     return render(request, "help.html",{})
+
+def product1(request):
+    return render(request, "products.html",{})
 """
 def index_view(request):
     return HttpResponse("hello") """
