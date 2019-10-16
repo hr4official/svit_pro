@@ -20,6 +20,8 @@ def login(request):
 def signup(request):
     return render(request, "signup.html",{})
 
+def product2(request):
+    return render(request, "products5.html",{})
     
 """
 def index_view(request):
